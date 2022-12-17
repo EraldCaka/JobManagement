@@ -1,0 +1,93 @@
+form {
+  text-align: center;
+}
+.login1 {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 300px;
+  height: 550px;
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+.name-div {
+  margin-top: 20px;
+}
+.lastname-div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.name {
+  outline: none;
+  border: none;
+  width: 180px;
+  height: 30px;
+  margin-top: 10px;
+  border-bottom: 1px solid #000;
+}
+.name::placeholder {
+  padding: 0 5px;
+}
+.lastname::placeholder {
+  padding: 0 5px;
+}
+.submit_btn {
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  margin-bottom: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.submit:hover {
+  background-color: black;
+
+  color: white;
+  cursor: pointer;
+}
+.submit:active {
+  background-color: white;
+  color: black;
+}
+.create {
+  margin-top: 15px;
+}
+
+.lastname {
+  outline: none;
+  border: none;
+  width: 180px;
+  height: 30px;
+  border-bottom: 1px solid #000;
+}
+.formstext {
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-size: 50px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.first1 {
+  margin-left: 20px;
+}
+.file1 {
+  font: 1rem/1.5 "PT Sans", Arial, sans-serif;
+  color: #5a5a5a;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: 250px;
+}
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
