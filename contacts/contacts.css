@@ -1,0 +1,19 @@
+.text-div {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+h1 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+.text2 {
+  text-decoration: none;
+  color: black;
+}
+.contacts1 {
+  margin-top: 50px;
+}

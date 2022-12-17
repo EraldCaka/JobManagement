@@ -1,0 +1,121 @@
+body {
+  background-color: bisque;
+  /* remove the links underline */
+}
+.welcome {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 65px;
+  color: darkseagreen;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+}
+nav {
+  padding-bottom: 20px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: royalblue;
+  margin-left: -8px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+li {
+  padding-top: 20px;
+  display: inline-block;
+  padding: 12px;
+  color: white;
+  float: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+
+/*
+Login page section
+*/
+form {
+  text-align: center;
+}
+.login {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+.username-div {
+  margin-top: 20px;
+}
+.password-div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.username {
+  outline: none;
+  border: none;
+  width: 180px;
+  height: 30px;
+  margin-top: 10px;
+  border-bottom: 1px solid #000;
+}
+.username::placeholder {
+  padding: 0 5px;
+}
+.password::placeholder {
+  padding: 0 5px;
+}
+.submit {
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  margin-bottom: 3px;
+}
+.submit:hover {
+  background-color: black;
+
+  color: white;
+  cursor: pointer;
+}
+.submit:active {
+  background-color: white;
+  color: black;
+}
+.create {
+  margin-top: 15px;
+}
+.create .newacc {
+  text-decoration: none;
+  color: black;
+}
+.password {
+  outline: none;
+  border: none;
+  width: 180px;
+  height: 30px;
+  border-bottom: 1px solid #000;
+}
+.formstext {
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-size: 50px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.first1 {
+  margin-left: 20px;
+}
