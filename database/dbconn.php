@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../homePage/homePage.css" />
     <link rel="stylesheet" href="dbconn.css" />
+        <title>JobManager</title>
     <link rel="icon" type="image/png" href="../images/icon.png" />
 </head>
 <body>
@@ -13,7 +14,7 @@
       <nav>
         <ul>
           <li class="first logout">
-            <a href="" class="../login/login.html">Logout</a>
+            <a href="../login/login.html" class="first">Logout</a>
           </li>
           <li>|</li>
           <li class="first">
