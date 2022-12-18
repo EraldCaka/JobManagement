@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../homePage/homePage.css" />
     <title>Document</title>
 </head>
 <body>
+<header>
+      <nav>
+        <ul>
+          <li class="first logout">
+            <a href="" class="identification">Logout</a>
+          </li>
+          <li class="first">
+            <a href="../contacts/contacts.html"></a>
+          </li>
+          <li></li>
+          <li class="first"><a href="../about-us/aboutUs.html"></a></li>
+          <li></li>
+          <li class="first"><a href="../career/career.html"></a></li>
+          <li></li>
+          <li class="first"><a href="../homePage/homePage.html"></a></li>
+        </ul>
+      </nav>
+    </header>
     <?php
         $servername = "localhost";
         $username="root";
@@ -18,7 +37,7 @@
             die("Connection failed: " . $conn->connect_error);
           }
           echo "Connected successfully";
-          $sql = 'SELECT username,password_emp FROM accounts.users;';
+          $sql = 'SELECT username,password_emp,empLastName,email,phone FROM accounts.users;';
            
           //make query & get result
             $result = mysqli_query($conn, $sql);
@@ -31,12 +50,30 @@
 
             //close connection
             mysqli_close($conn);
+            //echo "<br>";
+           // for($i=0;$i<count($users);$i++){
+           //     echo $users[$i]['username'] , " " , $users[$i]['password_emp'], " " , $users[$i]['empLastName'] , " " , $users[$i]['phone'], " " , $users[$i]['email'];
+           //     echo "<br>";
+           // }
+            echo "<table border='1'>
+            <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            </tr>";
             for($i=0;$i<count($users);$i++){
-                echo $users[$i]['username'];
-                echo "<br>";
+                echo "<tr>";
+                echo "<td>" . $users[$i]['username'] . "</td>";
+                echo "<td>" . $users[$i]['password_emp'] . "</td>";
+                echo "<td>" . $users[$i]['empLastName'] . "</td>";
+                echo "<td>" . $users[$i]['phone'] . "</td>";
+                echo "<td>" . $users[$i]['email'] . "</td>";
+                echo "</tr>";
             }
-
-            print_r($users[0]['username']);
+            echo "</table>";
+            //print_r($users[0]['username']);
           ?>
 
 </body>
