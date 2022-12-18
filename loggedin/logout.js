@@ -10,5 +10,5 @@ document.querySelector(".logout").addEventListener("click", function () {
   }
 });
 function change() {
-  document.querySelector(".identification").href = "../login/login.html";
+  document.querySelector(".identification").href = "http://localhost:3000/JobManagement/login/validation.php";
 }
