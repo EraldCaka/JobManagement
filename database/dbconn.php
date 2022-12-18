@@ -53,11 +53,7 @@
 
             //close connection
             mysqli_close($conn);
-            //echo "<br>";
-           // for($i=0;$i<count($users);$i++){
-           //     echo $users[$i]['username'] , " " , $users[$i]['password_emp'], " " , $users[$i]['empLastName'] , " " , $users[$i]['phone'], " " , $users[$i]['email'];
-           //     echo "<br>";
-           // }
+    
             echo "<table border='1'>
             <tr>
             <th>Username</th>
