@@ -12,6 +12,8 @@ document.querySelector(".submit").addEventListener("click", function () {
   }
   if (loggedin === true) {
     localStorage.setItem("loggedin", true);
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
     change();
   }
 });
