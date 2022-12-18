@@ -11,6 +11,7 @@ document.querySelector(".submit").addEventListener("click", function () {
     alert("Login Failed");
   }
   if (loggedin === true) {
+    localStorage.setItem("loggedin", true);
     change();
   }
 });
