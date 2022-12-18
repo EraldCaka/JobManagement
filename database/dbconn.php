@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../homePage/homePage.css" />
     <link rel="stylesheet" href="dbconn.css" />
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="../images/icon.png" />
 </head>
 <body>
 <header>
       <nav>
         <ul>
           <li class="first logout">
-            <a href="" class="identification">Logout</a>
+            <a href="" class="../login/login.html">Logout</a>
           </li>
+          <li>|</li>
           <li class="first">
-            <a href="../contacts/contacts.html"></a>
+            <a href="../database/dbconn.php">Users</a>
           </li>
+       
           <li></li>
           <li class="first"><a href="../about-us/aboutUs.html"></a></li>
           <li></li>
