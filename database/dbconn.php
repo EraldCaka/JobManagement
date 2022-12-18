@@ -14,7 +14,7 @@
       <nav>
         <ul>
           <li class="first logout">
-            <a href="../login/login.html" class="first">Logout</a>
+            <a href="http://localhost:3000/JobManagement/login/validation.php" class="first">Logout</a>
           </li>
           <li>|</li>
           <li class="first">
@@ -73,8 +73,9 @@
                 echo "</tr>";
             }
             echo "</table>";
-            //print_r($users[0]['username']);
+             //print_r($users[0]['username']);
           ?>
+          
 
 </body>
 </html>
