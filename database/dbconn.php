@@ -25,7 +25,18 @@
 
             //fetch the resulting rows as an array
             $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
-            print_r($users[0]);
+
+        //free result from memory
+            mysqli_free_result($result);
+
+            //close connection
+            mysqli_close($conn);
+            for($i=0;$i<count($users);$i++){
+                echo $users[$i]['username'];
+                echo "<br>";
+            }
+
+            print_r($users[0]['username']);
           ?>
 
 </body>
