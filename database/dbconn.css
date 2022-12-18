@@ -1,22 +1,22 @@
 table {
-  border: 1px solid #000000;
+  border: 1px solid black;
   border-collapse: collapse;
   width: 50%;
   margin-left: 500px;
   margin-top: 120px;
 }
 th {
-  border: 1px solid #000000;
+  border: 1px solid black;
   padding: 8px;
   text-align: left;
-  background-color: #4caf50;
+  background-color: green;
   color: white;
 }
 td {
-  border: 1px solid #000000;
+  border: 1px solid black;
   padding: 8px;
   text-align: left;
 }
 tr {
-  background-color: #f2f2f2;
+  background-color: white;
 }
