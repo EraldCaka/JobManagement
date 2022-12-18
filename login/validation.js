@@ -10,5 +10,11 @@ document.querySelector(".submit").addEventListener("click", function () {
   } else {
     alert("Login Failed");
   }
+  if (loggedin === true) {
+    change();
+  }
 });
-export { loggedin };
+function change() {
+  document.querySelector(".identification").href = "../loggedin/admin.html";
+}
+//export { loggedin };
