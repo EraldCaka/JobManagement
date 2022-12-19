@@ -21,8 +21,8 @@
             <a href="../database/dbconn.php">Users</a>
           </li>
        
-          <li></li>
-          <li class="first"><a href="../about-us/aboutUs.html"></a></li>
+          <li>|</li>
+          <li class="first"><a href="../loggedin/admin.html">Home</a></li>
           <li></li>
           <li class="first"><a href="../career/career.html"></a></li>
           <li></li>
