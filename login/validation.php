@@ -106,7 +106,7 @@
  
     for($i =0 ; $i< count($users); $i++){
      if($user_name == $users[$i]['username'] && $pass_word == $users[$i]['password_emp']){
-        header("Location: http://localhost:3000/JobManagement/loggedin/admin.html");
+        header("Location:http://localhost:3000/JobManagement/loggedin/admin.html");
         exit();
      }
     }
