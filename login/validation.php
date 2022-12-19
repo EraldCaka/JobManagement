@@ -69,7 +69,7 @@
   
 
     <?php
-    //    <script src="validation.js"></script>
+    //  
     error_reporting(0);
   $servername = "localhost";
   $username="root";
@@ -99,6 +99,7 @@
       //  }
       
 ?>
+     <script src="validation.js"></script>
   <?php
 
    $user_name= $_GET['username']; 
@@ -111,5 +112,6 @@
      }
     }
    ?>
+
   </body>
 </html>

@@ -31,9 +31,6 @@
       </nav>
     </header>
     <h1 class="welcome">Welcome</h1>
-    <?php
-    echo "Welcome " . $_SESSION['username'] . " ! ";
-    ?>
     <script src="logout.js"></script>
     <script src="firstProcess.js"></script>
   </body>
