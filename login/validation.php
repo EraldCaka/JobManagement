@@ -40,6 +40,7 @@
             type="text"
             name="username"
             placeholder="Username"
+            required
           />
         </div>
         <div class="password-div">
@@ -51,6 +52,7 @@
             type="password"
             name="password"
             placeholder="Password"
+            required
           />
         </div>
         <div class="sub">
