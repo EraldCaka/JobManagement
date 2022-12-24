@@ -16,6 +16,10 @@
             <a href="" class="identification">Logout</a>
           </li>
           <li>|</li>
+          <li class="first options">
+            <a href="" class="http://localhost:3000/JobManagement/options/options.php">Profile</a>
+          </li>
+          <li>|</li>
           <li class="first">
             <a href="http://localhost:3000/JobManagement/database/dbconn.php"
               >Users</a

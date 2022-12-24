@@ -4,6 +4,7 @@ document.querySelector(".logout").addEventListener("click", function () {
   //localStorage.setItem("loggedin", false);
   localStorage.setItem("username", "");
   localStorage.setItem("password", "");
+  
   change();
 });
 function change() {
