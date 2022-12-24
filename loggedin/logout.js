@@ -10,3 +10,4 @@ function change() {
   document.querySelector(".identification").href =
     "http://localhost:3000/JobManagement/login/validation.php";
 }
+console.log("logout.js end");
