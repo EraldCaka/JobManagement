@@ -17,6 +17,10 @@
             <a href="http://localhost:3000/JobManagement/login/validation.php" class="first">Logout</a>
           </li>
           <li>|</li>
+          <li class="first options">
+            <a href="http://localhost:3000/JobManagement/options/options.php" class="">Profile</a>
+          </li>
+          <li>|</li>
           <li class="first">
             <a href="../database/dbconn.php">Users</a>
           </li>
@@ -31,15 +35,7 @@
       </nav>
     </header>
     <?php
-        $servername = "localhost";
-        $username="root";
-        $password = "alesio1234";
-        $dbname = "accounts";
-
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-          }
+   include_once 'database_con.php';
         //  echo "Connected successfully";
           $sql = 'SELECT username,password_emp,empLastName,email,phone FROM accounts.users;';
            

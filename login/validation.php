@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../homePage/homePage.css" />
   </head>
   <body>
-
+<?php
+session_start();
+?>
     <header>
       <nav>
         <ul>
@@ -73,17 +75,9 @@
     <?php
     //  
     error_reporting(0);
-  $servername = "localhost";
-  $username="root";
-  $password = "alesio1234";
-  $dbname = "accounts";
-
-  $conn = new mysqli($servername, $username, $password, $dbname);
-  if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
+    include_once '../database/database_con.php';
     //echo "Connected successfully";
-    $sql = 'SELECT username,password_emp,empLastName,email,phone FROM accounts.users;';
+    $sql = 'SELECT user_id,username,password_emp,empLastName,email,phone FROM accounts.users;';
      
     //make query & get result
       $result = mysqli_query($conn, $sql);
@@ -101,19 +95,28 @@
       //  }
       
 ?>
-     <script src="validation.js"></script>
+    
   <?php
 
    $user_name= $_GET['username']; 
    $pass_word= $_GET['password'];
+  
+$_SESSION['user_id']="";
  
     for($i =0 ; $i< count($users); $i++){
      if($user_name == $users[$i]['username'] && $pass_word == $users[$i]['password_emp']){
+ 
+     $user_id=$users[$i]['user_id'];
+  
+      echo "You are logged in",$user_id;
+      $_SESSION['user_id'] = $user_id;
+
         header("Location:http://localhost:3000/JobManagement/loggedin/admin.html");
         exit();
      }
-    }
-   ?>
+    } 
 
+   ?>
+ <script src="validation.js"></script>
   </body>
 </html>

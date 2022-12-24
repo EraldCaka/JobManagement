@@ -1,0 +1,24 @@
+.container {
+  margin-top: 100px;
+  margin-left: 33rem;
+  width: 800px;
+}
+.profile_settings {
+  border: 2px solid black;
+}
+.el {
+  border-bottom: 1px solid black;
+}
+.edit_btn {
+  text-align: center;
+
+  margin-top: 30px;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.username_profile {
+  margin-left: 30px;
+  text-align: center;
+}
