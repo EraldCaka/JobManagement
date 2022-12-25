@@ -2,10 +2,10 @@
   margin-top: 100px;
   margin-left: 44rem;
   width: 500px;
-  background-color: lightcyan;
+  background-color: #316861;
+  border-radius: 12px;
 }
-.profile_settings {
-}
+
 /*
 make the two divs side by side
 */
@@ -21,12 +21,15 @@ make the two divs side by side
 
 .edit_btn {
   text-align: center;
-
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 30px;
   width: 100px;
   height: 40px;
   background-color: white;
   margin-bottom: 30px;
+  border-radius: 12px;
+  padding-bottom: 5px;
 }
 .username_profile {
   margin-left: 30px;
@@ -41,11 +44,14 @@ make the two divs side by side
   margin-bottom: 20px;
   margin-left: 10px;
 }
+
 .b {
   margin-right: 20px;
   font-size: 19px;
   font-style: roboto;
+  color: white;
 }
+
 .name1 {
   margin-left: -10px;
 }
@@ -65,4 +71,13 @@ make the two divs side by side
 }
 .reveal {
   margin-left: -20px;
+}
+.prp {
+  color: white;
+}
+.inp::placeholder {
+  color: white;
+}
+.inp {
+  color: white;
 }

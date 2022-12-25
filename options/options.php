@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JobManager</title>
     <link rel="stylesheet" href="../homePage/homePage.css" />
-    <link rel="stylesheet" href="../options/options.css" />
+    <link rel="stylesheet" href="options.css" />
     <link rel="icon" type="image/png" href="../images/icon.png" />
   </head>
   <body>
@@ -47,7 +47,7 @@
        
         </div>
         <div class="profile_settings">
-          <h1>Profile</h1>
+          <h1 class="prp">Profile</h1>
           <div class="el">
            <a class="n1 b">Username</a>
             <input class="name1 inp" name="username" placeholder="name">
