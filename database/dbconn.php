@@ -59,19 +59,24 @@
             <th>Phone</th>
             <th>Email</th>
             </tr>";
+            $count=1;
             for($i=0;$i<count($users);$i++){
                 echo "<tr>";
-                echo "<td>" . $users[$i]['username'] . "</td>";
-                echo "<td>" . $users[$i]['password_emp'] . "</td>";
-                echo "<td>" . $users[$i]['empLastName'] . "</td>";
-                echo "<td>" . $users[$i]['phone'] . "</td>";
-                echo "<td>" . $users[$i]['email'] . "</td>";
+                echo "<td class='uname$count 'row$count''>" . $users[$i]['username'] . "</td>";
+                echo "<td class='row1$count'>" .  $users[$i]['password_emp'] . "</td>";
+                echo "<td class='row2$count'>" . $users[$i]['empLastName'] . "</td>";
+                echo "<td class='row3$count'>" . $users[$i]['phone'] . "</td>";
+                echo "<td class='row4$count'>" . $users[$i]['email'] . "</td>";
                 echo "</tr>";
+                $count++;
+
             }
             echo "</table>";
+         
+        
              //print_r($users[0]['username']);
           ?>
           
-
+<script src="mark_user.js"></script>
 </body>
 </html>
