@@ -16,7 +16,7 @@ nav {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: #056c5f;
   margin-left: -8px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
@@ -24,13 +24,13 @@ li {
   padding-top: 20px;
   display: inline-block;
   padding: 12px;
-  color: black;
+  color: white;
   float: right;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 nav a:hover {
   color: lightgray;
