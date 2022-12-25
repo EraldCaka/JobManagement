@@ -7,8 +7,8 @@ h1 {
   margin-top: 100px;
   margin-bottom: 20px;
   font-size: 50px;
-  color: white;
-  -webkit-text-stroke: 1px black;
+  color: #6c9e97;
+  text-shadow: 1px 1px 1px black;
 }
 .text {
   width: 500px;
@@ -41,4 +41,7 @@ h1 {
   width: 500px;
   margin-top: 50px;
   font-size: 16px;
+}
+footer {
+  margin-top: 39px;
 }

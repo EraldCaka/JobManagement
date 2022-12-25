@@ -64,8 +64,8 @@ form {
   border-bottom: 1px solid #000;
 }
 .formstext {
-  color: white;
-  -webkit-text-stroke: 1px black;
+  color: #6c9e97;
+  text-shadow: 1px 1px 1px black;
   font-size: 50px;
   margin-top: 12px;
   margin-bottom: 10px;
@@ -90,4 +90,10 @@ hr {
 hr {
   margin-left: 20px;
   margin-right: 20px;
+}
+footer {
+  margin-top: 131px;
+}
+.first1 {
+  margin-left: 250px;
 }

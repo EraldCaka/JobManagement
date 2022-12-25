@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JobManager</title>
     <link rel="stylesheet" href="homePage.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link rel="icon" type="image/png" href="../images/icon.png" />
   </head>
   <body>
@@ -26,6 +27,19 @@
         </ul>
       </nav>
     </header>
-    <h1 class="welcome">Welcome</h1>
+    <h1 class="">Welcome</h1>
+   
+
+    <footer>
+      <div class="foot">
+   <div class="first1">
+              <a class="ele"> +1 234 567 8900</a>
+              <a class="ele"> needhelp@company.com</a></td>
+              <a class="ele"> Broklyn golden street new york</a>
+            </div>
+        <div class="copyright">
+          <a class="copyR">Copyright © 2022 JobManagement. All Rights Reserved.</a>
+      </div>
+    </footer>
   </body>
 </html>

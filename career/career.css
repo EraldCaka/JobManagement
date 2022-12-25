@@ -2,7 +2,7 @@
   padding-top: 50px;
   text-align: center;
   font-size: 65px;
-  color: goldenrod;
+  color: #6c9e97;
   text-shadow: 1px 1px 1px black;
   text-decoration: none;
 }
@@ -20,6 +20,7 @@
   width: 400px;
   height: 250px;
   background-color: white;
+  border-radius: 7px;
 }
 .job2 {
   margin: 0 auto;
@@ -27,18 +28,21 @@
   width: 400px;
   height: 250px;
   background-color: white;
+  border-radius: 7px;
 }
 .job3 {
   text-align: center;
   width: 400px;
   height: 250px;
   background-color: white;
+  border-radius: 7px;
 }
 .job4 {
   text-align: center;
   width: 400px;
   height: 250px;
   background-color: white;
+  border-radius: 7px;
 }
 .job-button {
   text-align: center;
