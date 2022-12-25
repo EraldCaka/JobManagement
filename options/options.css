@@ -1,14 +1,24 @@
 .container {
   margin-top: 100px;
-  margin-left: 33rem;
-  width: 800px;
+  margin-left: 44rem;
+  width: 500px;
+  background-color: lightcyan;
 }
 .profile_settings {
-  border: 2px solid black;
+}
+/*
+make the two divs side by side
+*/
+.profile {
+  display: flex;
+  flex-direction: column;
 }
 .el {
-  border-bottom: 1px solid black;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+
 .edit_btn {
   text-align: center;
 
@@ -21,4 +31,38 @@
 .username_profile {
   margin-left: 30px;
   text-align: center;
+}
+.inp {
+  width: 200px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.b {
+  margin-right: 20px;
+  font-size: 19px;
+  font-style: roboto;
+}
+.name1 {
+  margin-left: -10px;
+}
+.name2 {
+  margin-left: -10px;
+}
+.name3 {
+  margin-left: -10px;
+}
+.edit_btn:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+.edit_btn:active {
+  background-color: white;
+  cursor: pointer;
+}
+.reveal {
+  margin-left: -20px;
 }
