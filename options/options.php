@@ -79,7 +79,7 @@
     include_once '../database/database_con.php';
     include_once '../login/user_id.php';
 
-echo $user_id;
+//echo $user_id;
     $query = "SELECT * FROM users WHERE user_id='$user_id'";
     $query_run = mysqli_query($conn,$query);
     while($row = mysqli_fetch_array($query_run))
