@@ -16,7 +16,7 @@ session_start();
     <header>
       <nav>
         <ul>
-          <li class="first"><a href="login.html">Login</a></li>
+          <li class="first"><a href="http://localhost:3000/JobManagement/login/validation.php">Login</a></li>
           <li>|</li>
           <li class="first">
             <a href="../contacts/contacts.html">Contacts</a>
