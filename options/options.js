@@ -9,3 +9,13 @@ document.querySelector(".edit_btn").addEventListener("click", function () {
     alert("Data Updated");
   }
 });
+function myFunction() {
+  console.log(document.querySelector(".pass").type);
+  let x = document.querySelector(".pass");
+  if (x.type === "password") {
+    x.type = "text";
+    console.log(document.querySelector(".pass").type);
+  } else {
+    x.type = "password";
+  }
+}
