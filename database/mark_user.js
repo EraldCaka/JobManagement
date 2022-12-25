@@ -1,6 +1,4 @@
 "use strict";
-let name1 = document.querySelector(".uname2").textContent;
-console.log(name1);
 
 for (let i = 1; i < 5; i++) {
   name1 = document.querySelector(".uname" + i).textContent;
