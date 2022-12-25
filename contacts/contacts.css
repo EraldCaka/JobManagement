@@ -7,8 +7,8 @@ h1 {
   margin-top: 100px;
   margin-bottom: 20px;
   font-size: 50px;
-  color: white;
-  -webkit-text-stroke: 1px black;
+  color: #6c9e97;
+  text-shadow: 1px 1px 1px black;
 }
 .text2 {
   text-decoration: none;
@@ -16,4 +16,7 @@ h1 {
 }
 .contacts1 {
   margin-top: 50px;
+}
+footer {
+  margin-top: 351px;
 }

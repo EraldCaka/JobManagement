@@ -7,6 +7,7 @@
     <title>JobManager</title>
     <link rel="icon" type="image/png" href="../images/icon.png" />
     <link rel="stylesheet" href="../homePage/homePage.css" />
+    <link rel="stylesheet" href="validation.css" />
   </head>
   <body>
 <?php
@@ -25,7 +26,7 @@ session_start();
           <li>|</li>
           <li class="first"><a href="../career/career.html">Career</a></li>
           <li>|</li>
-          <li class="first"><a href="../homePage/homePage.html">Home</a></li>
+          <li class="first"><a href="http://localhost:3000/JobManagement/homePage/homePage.php">Home</a></li>
         </ul>
       </nav>
     </header>
@@ -70,7 +71,17 @@ session_start();
         </div>
       </form>
     </div>
-  
+    <footer>
+      <div class="foot">
+   <div class="first1">
+              <a class="ele"> +1 234 567 8900</a>
+              <a class="ele"> needhelp@company.com</a></td>
+              <a class="ele"> Broklyn golden street new york</a>
+            </div>
+        <div class="copyright">
+          <a class="copyR">Copyright © 2022 JobManagement. All Rights Reserved.</a>
+      </div>
+    </footer>
 
     <?php
     //  
