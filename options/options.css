@@ -23,13 +23,14 @@ make the two divs side by side
   text-align: center;
   font-size: 17px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 30px;
+  margin-top: 5px;
   width: 100px;
   height: 40px;
   background-color: white;
   margin-bottom: 30px;
   border-radius: 12px;
   padding-bottom: 5px;
+  border: 1.5px solid black;
 }
 .username_profile {
   margin-left: 30px;
@@ -40,7 +41,7 @@ make the two divs side by side
   height: 30px;
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   margin-bottom: 20px;
   margin-left: 10px;
 }
@@ -62,7 +63,8 @@ make the two divs side by side
   margin-left: -10px;
 }
 .edit_btn:hover {
-  background-color: lightblue;
+  background-color: #94dad0;
+
   cursor: pointer;
 }
 .edit_btn:active {
