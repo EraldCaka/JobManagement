@@ -20,3 +20,6 @@ h1 {
 footer {
   margin-top: 351px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}

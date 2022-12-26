@@ -30,7 +30,7 @@
           <li></li>
           <li class="first"><a href="../career/career.html"></a></li>
           <li></li>
-          <li class="first"><a href="../homePage/homePage.html"></a></li>
+          <li class="first"><a href="http://localhost:3000/JobManagement/loggedin/admin.php"></a></li>
         </ul>
       </nav>
     </header>

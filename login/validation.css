@@ -1,3 +1,6 @@
 footer {
   margin-top: 381px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
