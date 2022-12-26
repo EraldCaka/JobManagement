@@ -30,6 +30,7 @@ session_start();
         </ul>
       </nav>
     </header>
+ 
     <div class="login">
       <form class="form1" method="get">
         <h1 class="formstext">Login</h1>
