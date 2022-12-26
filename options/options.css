@@ -83,3 +83,6 @@ make the two divs side by side
 .inp {
   color: white;
 }
+body::-webkit-scrollbar {
+  display: none;
+}

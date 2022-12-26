@@ -97,3 +97,6 @@ hr {
 footer {
   margin-top: 154px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}

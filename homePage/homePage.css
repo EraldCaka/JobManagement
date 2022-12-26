@@ -162,3 +162,6 @@ footer {
   /* display the elements at the center of the page */
   text-align: center;
 }
+body::-webkit-scrollbar {
+  display: none;
+}

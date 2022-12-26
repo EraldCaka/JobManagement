@@ -97,3 +97,6 @@ footer {
 .first1 {
   margin-left: 250px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
