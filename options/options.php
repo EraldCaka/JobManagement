@@ -102,6 +102,8 @@ if(isset($_POST['update'])){
   $query_run = mysqli_query($conn,$query);
   if($query_run)
   {
+    header("Location:http://localhost:3000/JobManagement/options/options.php");
+  exit();
   }
   else
   {
