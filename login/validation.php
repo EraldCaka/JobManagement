@@ -100,7 +100,7 @@ session_start();
   //free result from memory
       mysqli_free_result($result);
 
-      //close connection
+      //close connectionn
       mysqli_close($conn);
      // for($i =0 ; $i< count($users); $i++){
         //echo $users[$i]['username'];
