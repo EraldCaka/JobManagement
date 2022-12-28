@@ -91,7 +91,7 @@ session_start();
     //echo "Connected successfully";
     $sql = 'SELECT user_id,username,password_emp,empLastName,email,phone FROM accounts.users;';
      
-    //make query & get result
+    //make query & get results
       $result = mysqli_query($conn, $sql);
 
       //fetch the resulting rows as an array
