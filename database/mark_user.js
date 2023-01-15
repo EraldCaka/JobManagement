@@ -6,7 +6,7 @@ for (let i = 1; i < 5; i++) {
   console.log(name1);
   if (name1 == localStorage.getItem("username")) {
     document.querySelector(".uname" + i).style.backgroundColor = "red";
-    document.querySelector(".row1" + i).style.backgroundColor = "red";
+
     document.querySelector(".row2" + i).style.backgroundColor = "red";
     document.querySelector(".row3" + i).style.backgroundColor = "red";
     document.querySelector(".row4" + i).style.backgroundColor = "red";
