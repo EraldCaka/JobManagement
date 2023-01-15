@@ -48,34 +48,50 @@
         //free result from memory
             mysqli_free_result($result);
 
-            //close connection
-            mysqli_close($conn);
     
-            echo "<table border='1'>
-            <tr>
-            <th>Username</th>
-            <th>Password</th>
-            <th>Last Name</th>
-            <th>Phone</th>
-            <th>Email</th>
-            </tr>";
-            $count=1;
-            for($i=0;$i<count($users);$i++){
-                echo "<tr>";
-                echo "<td class='uname$count 'row$count''>" . $users[$i]['username'] . "</td>";
-                echo "<td class='row1$count'>" .  $users[$i]['password_emp'] . "</td>";
-                echo "<td class='row2$count'>" . $users[$i]['empLastName'] . "</td>";
-                echo "<td class='row3$count'>" . $users[$i]['phone'] . "</td>";
-                echo "<td class='row4$count'>" . $users[$i]['email'] . "</td>";
-                echo "</tr>";
-                $count++;
-
-            }
-            echo "</table>";
-         
-        
              //print_r($users[0]['username']);
           ?>
+
+
+          <?php
+     
+            if(isset($_GET['searchbtn'])){
+              $searchname = $_GET['searchname'];
+              echo $searchname;
+              echo "<table border='1'>
+              <tr>
+              <th>Username</th>
+              <th>Last Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              </tr>";
+              $count=1;
+              for($i=0;$i<count($users);$i++){
+              if(str_contains($users[$i]['username'],$searchname)){
+                  echo "<tr>";
+                  echo "<td class='uname$count 'row$count''>" . $users[$i]['username'] . "</td>";
+               
+                  echo "<td class='row2$count'>" . $users[$i]['empLastName'] . "</td>";
+                  echo "<td class='row3$count'>" . $users[$i]['phone'] . "</td>";
+                  echo "<td class='row4$count'>" . $users[$i]['email'] . "</td>";
+                  echo "</tr>";
+                  $count++;
+                }
+             }
+              echo "</table>";
+            }
+    
+          ?>
+                    <form method="get">
+            <div> 
+            <div>
+          <input type="text" class="searchname" name="searchname" placeholder="search user">
+          </div>
+          <div>
+          <button type="submit" class="searchbtn" name="searchbtn" >Search</button>
+          </div>
+          </div>
+          </form>
           
 <script src="mark_user.js"></script>
 </body>

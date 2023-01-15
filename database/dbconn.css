@@ -23,3 +23,23 @@ tr {
 body::-webkit-scrollbar {
   display: none;
 }
+.searchbtn {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  margin-top: 20px;
+}
+.searchbtn:hover {
+  background-color: #45a049;
+}
+.searchname {
+  padding: 10px 20px;
+
+  border-radius: 4px;
+
+  margin-top: 50px;
+}
