@@ -72,7 +72,11 @@ session_start();
         </div>
       </form>
     </div>
-    <footer>
+
+
+    <?php
+    /*
+        <footer>
       <div class="foot">
    <div class="first1">
               <a class="ele"> +1 234 567 8900</a>
@@ -83,13 +87,12 @@ session_start();
           <a class="copyR">Copyright © 2022 JobManagement. All Rights Reserved.</a>
       </div>
     </footer>
-
-    <?php
+    */
     //  
     error_reporting(0);
     include_once '../database/database_con.php';
     //echo "Connected successfully";
-    $sql = 'SELECT user_id,username,password_emp,empLastName,email,phone FROM accounts.users;';
+    $sql = 'SELECT user_id,username,password_emp,empLastName,email,phone,user_type FROM accounts.users;';
      
     //make query & get results
       $result = mysqli_query($conn, $sql);
@@ -101,7 +104,7 @@ session_start();
       mysqli_free_result($result);
 
       //close connectionn
-      mysqli_close($conn);
+  
      // for($i =0 ; $i< count($users); $i++){
         //echo $users[$i]['username'];
       //  }
@@ -112,19 +115,42 @@ session_start();
 
    $user_name= $_GET['username']; 
    $pass_word= $_GET['password'];
-  
+ 
 $_SESSION['user_id']="";
  
     for($i =0 ; $i< count($users); $i++){
+   
      if($user_name == $users[$i]['username'] && $pass_word == $users[$i]['password_emp']){
  
      $user_id=$users[$i]['user_id'];
-  
-      echo "You are logged in",$user_id;
-      $_SESSION['user_id'] = $user_id;
-
+       
+    
+      if($users[$i]['user_type'] == "admin"){
+        echo "You are logged in",$user_id;
+        $_SESSION['user_id'] = $user_id;
+        $_SESSION['user_type'] = $users[$i]['user_type'];
         header("Location:http://localhost:3000/JobManagement/loggedin/admin.html");
         exit();
+      }
+      if($users[$i]['user_type'] == "recruiter"){
+        echo "You are logged in",$user_id;
+        $_SESSION['user_id'] = $user_id;
+        $_SESSION['user_type'] = $users[$i]['user_type'];
+        header("Location:http://localhost:3000/JobManagement/loggedinRecruiter/recruiterHome.php");
+        exit();
+      }
+      if($users[$i]['user_type'] == "employee"){
+        echo "You are logged in",$user_id;
+        $_SESSION['user_id'] = $user_id;
+        $_SESSION['user_type'] = $users[$i]['user_type'];
+        header("Location:http://localhost:3000/JobManagement/loggedinEmployee/employeeHome.php");
+        exit();
+      }
+      else{
+        echo "You are not logged in";
+
+      }
+     
      }
     } 
 
