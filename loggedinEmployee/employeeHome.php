@@ -41,5 +41,8 @@
       </nav>
     </header>
     <h1>Welcome lotig1123</h1>
+    <?php
+      include '../database/database_con.php';
+    ?>
 </body>
 </html>
