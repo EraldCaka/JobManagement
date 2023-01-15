@@ -10,5 +10,7 @@ for (let i = 1; i < 5; i++) {
     document.querySelector(".row2" + i).style.backgroundColor = "red";
     document.querySelector(".row3" + i).style.backgroundColor = "red";
     document.querySelector(".row4" + i).style.backgroundColor = "red";
+    document.querySelector(".row5" + i).style.backgroundColor = "red";
+    document.querySelector(".row6" + i).style.backgroundColor = "red";
   }
 }
