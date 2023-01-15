@@ -100,11 +100,7 @@
             required
           />
         </div>
-        <div class="lastname-div">
-          <div>
-            <a></a>
-          </div>
-        </div>
+      
         <div <div class="sub">
           <input class="submit_btn" type="submit" value="Submit" />
         </div>
@@ -148,9 +144,9 @@
       $sql = "INSERT INTO `accounts`.`applications` (`id_user`, `username`, `empLastName`, `jobPosition`, `phone`, `email`) VALUES ('$id','$name', '$empLastName', '$jobPosition', '$phone', '$email')";
       $result = mysqli_query($conn, $sql);
       if ($result) {
-        echo "<script>alert('Your application has been submitted successfully!')</script>";
+      //  echo "<script>alert('Your application has been submitted successfully!')</script>";
       } else {
-        echo "<script>alert('Your application has not been submitted successfully!')</script>";
+       // echo "<script>alert('Your application has not been submitted successfully!')</script>";
       }
     }
     ?>
