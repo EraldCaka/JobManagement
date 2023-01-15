@@ -44,5 +44,7 @@ body::-webkit-scrollbar {
   margin-top: 50px;
 }
 form {
+  /*place this form in the middle of the page and to be at the very center of the page*/
+
   margin-top: 50px;
 }

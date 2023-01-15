@@ -37,7 +37,7 @@
     <?php
    include_once 'database_con.php';
         //  echo "Connected successfully";
-          $sql = 'SELECT username,password_emp,empLastName,email,phone FROM accounts.users;';
+          $sql = 'SELECT username,password_emp,empLastName,email,phone,user_type,jobPosition FROM accounts.users;';
            
           //make query & get result
             $result = mysqli_query($conn, $sql);
@@ -64,6 +64,8 @@
               <th>Last Name</th>
               <th>Phone</th>
               <th>Email</th>
+              <th>Type</th>
+              <th>Position</th>
               </tr>";
               $count=1;
               for($i=0;$i<count($users);$i++){
@@ -74,6 +76,8 @@
                   echo "<td class='row2$count'>" . $users[$i]['empLastName'] . "</td>";
                   echo "<td class='row3$count'>" . $users[$i]['phone'] . "</td>";
                   echo "<td class='row4$count'>" . $users[$i]['email'] . "</td>";
+                  echo "<td class='row5$count'>" . $users[$i]['user_type'] . "</td>";
+                  echo "<td class='row6$count'>" . $users[$i]['jobPosition'] . "</td>";
                   echo "</tr>";
                   $count++;
                 }
