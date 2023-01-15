@@ -13,3 +13,5 @@ document.querySelector(".submit_btn").addEventListener("click", function () {
   };
   console.log(data);
 });
+console.log(localStorage.getItem("job"));
+document.querySelector(".jobposition").value = localStorage.getItem("job");
