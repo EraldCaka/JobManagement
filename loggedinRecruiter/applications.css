@@ -1,3 +1,8 @@
+form {
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
 table {
   border: 1px solid black;
   border-collapse: collapse;
@@ -23,52 +28,10 @@ tr {
 body::-webkit-scrollbar {
   display: none;
 }
-.searchbtn {
-  background-color: green;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.column1 {
+  /*border: none;*/
+}
 
-  margin-top: 20px;
-}
-.searchbtn:hover {
-  background-color: #45a049;
-}
-.searchname {
-  padding: 10px 20px;
-
-  border-radius: 4px;
-
-  margin-top: 50px;
-}
-form {
-  margin-top: 50px;
-}
-.searchbtn {
-  background-color: green;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  margin-top: 20px;
-}
-.searchbtn:hover {
-  background-color: #45a049;
-}
-.searchname {
-  padding: 10px 20px;
-
-  border-radius: 4px;
-
-  margin-top: 50px;
-}
-form {
-  margin-top: 50px;
-}
 .searchbtn {
   background-color: green;
   color: white;
@@ -78,7 +41,44 @@ form {
   cursor: pointer;
 
   margin-top: 0px;
+  margin-right: 30px;
 }
 .searchbtn:hover {
+  background-color: #45a049;
+}
+.searchname {
+  padding: 10px 20px;
+
+  border-radius: 4px;
+
+  margin-top: 50px;
+}
+form {
+  margin-top: 50px;
+}
+.searchbtn1 {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: -50px;
+  margin-top: 0px;
+}
+.searchbtn1:hover {
+  background-color: #45a049;
+}
+.searchbtn_1 {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  margin-top: 10px;
+}
+.searchbtn_1:hover {
   background-color: #45a049;
 }

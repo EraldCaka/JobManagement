@@ -17,6 +17,11 @@
             <a href="http://localhost:3000/JobManagement/login/validation.php" class="identification">Logout</a>
           </li>
           <li>|</li>
+          <li class="first">
+            <a href="http://localhost:3000/JobManagement/loggedinRecruiter/applications.php"
+              >Applications</a
+            >
+          <li>|</li>
           <li class="first options">
             <a
               href="http://localhost:3000/JobManagement/loggedinRecruiter/recruiterHome.php"
@@ -24,11 +29,7 @@
               >Home</a
             >
           </li>
-          <li></li>
-          <li class="first">
-            <a href="http://localhost:3000/JobManagement/"
-              ></a
-            >
+        
           </li>
           <li></li>
           <li class="first">
