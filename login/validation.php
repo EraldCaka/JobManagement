@@ -72,11 +72,7 @@ session_start();
         </div>
       </form>
     </div>
-
-
-    <?php
-    /*
-        <footer>
+    <footer>
       <div class="foot">
    <div class="first1">
               <a class="ele"> +1 234 567 8900</a>
@@ -87,6 +83,10 @@ session_start();
           <a class="copyR">Copyright © 2022 JobManagement. All Rights Reserved.</a>
       </div>
     </footer>
+
+    <?php
+    /*
+
     */
     //  
     error_reporting(0);
