@@ -46,9 +46,10 @@
     <body>
 
              <?php
+             // error_reporting(0);
    include_once '../database/database_con.php';
         //  echo "Connected successfully";
-          $sql = 'SELECT username,empLastName,jobPosition,email,phone,email FROM accounts.applications;';
+          $sql = 'SELECT id_user,username,empLastName,jobPosition,email,phone,email FROM accounts.applications;';
            
           //make query & get result
             $result = mysqli_query($conn, $sql);
@@ -90,7 +91,7 @@
                   echo "<td class='row$count'>" . $users[$i]['jobPosition'] . "</td>";
                   echo "<td class='row$count'>" . $users[$i]['email'] . "</td>";
                   echo "<td class='row$count'>" . $users[$i]['phone'] . "</td>";
-                  echo "<form method=`'get'`>";
+                  echo "<form method='post'>";
                   $temp1=$users[$i]['username'];
                   echo "<td class='row$count column1'>
                   <button name=`approve$count` class='searchbtn2$count searchbtn' value='$temp1'>Approve</button>
@@ -105,10 +106,28 @@
              }
          
               echo "</table>";
+    //       for($i= 1 ; $i<count($users)+1;$i++){
+            if(isset($_POST[`deny1`])){
+          
+              $temp=$_POST['deny1'];
+              echo $temp+"hello";
+              $sql = "DELETE FROM applications WHERE username='$temp';";
+              $result = mysqli_query($conn, $sql);
+              if ($result) {
+                  echo "<script>alert('Your application has been submitted successfully!')</script>";
+                } else {
+                echo "<script>alert('Your application has not been submitted successfully!')</script>";
+                }
+            }
+      //     }
+               
               
           //  }
     
           ?>
+          <script>
+            
+            </script>
          <form method="get">
             <div> 
                 <div>
