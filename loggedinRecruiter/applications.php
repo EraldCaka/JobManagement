@@ -91,11 +91,11 @@
                   echo "<td class='row$count'>" . $users[$i]['jobPosition'] . "</td>";
                   echo "<td class='row$count'>" . $users[$i]['email'] . "</td>";
                   echo "<td class='row$count'>" . $users[$i]['phone'] . "</td>";
-                  echo "<form method='post'>";
+                  echo "<form method='get'>";
                   $temp1=$users[$i]['username'];
                   echo "<td class='row$count column1'>
-                  <button name=`approve$count` class='searchbtn2$count searchbtn' value='$temp1'>Approve</button>
-                  <button name=`deny$count` class='searchbtn1$count searchbtn1'  value='$temp1'>remove</button>
+                  <button name='approve$count' class='searchbtn2$count searchbtn' value='$temp1'>Approve</button>
+                  <button name='deny$count' class='searchbtn1$count searchbtn1'  value='$temp1'>remove</button>
                   </td>";
                   echo "</form>";
                   echo "</tr>";
@@ -106,11 +106,13 @@
              }
          
               echo "</table>";
-    //       for($i= 1 ; $i<count($users)+1;$i++){
-            if(isset($_POST[`deny1`])){
+          $start=false;
+          for($i= 1 ; $i<count($users)+1;$i++){
+         
+            if(isset($_GET["deny$i"])){
           
-              $temp=$_POST['deny1'];
-              echo $temp+"hello";
+              $temp=$_GET["deny$i"];
+              echo $temp;
               $sql = "DELETE FROM applications WHERE username='$temp';";
               $result = mysqli_query($conn, $sql);
               if ($result) {
@@ -118,8 +120,14 @@
                 } else {
                 echo "<script>alert('Your application has not been submitted successfully!')</script>";
                 }
+                $start=true;
             }
-      //     }
+            if($start)
+            {
+              $sql = "UPDATE applications set  WHERE username='$temp';";
+            }
+         
+         }
                
               
           //  }
