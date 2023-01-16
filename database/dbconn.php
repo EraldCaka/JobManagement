@@ -78,11 +78,17 @@
                   echo "<td class='row4$count'>" . $users[$i]['email'] . "</td>";
                   echo "<td class='row5$count'>" . $users[$i]['user_type'] . "</td>";
                   echo "<td class='row6$count'>" . $users[$i]['jobPosition'] . "</td>";
+                  echo "<form method=`'get'`>";
+                  echo "<td class='row7$count'><button name=`remove`>Remove</button></td>";
+                  echo "</form>";
                   echo "</tr>";
+           
                   $count++;
                 }
+              
              }
               echo "</table>";
+              
             }
     
           ?>
