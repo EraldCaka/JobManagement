@@ -119,7 +119,7 @@
     </footer>
     <?php
     include "../database/database_con.php";
-    error_reporting(0);
+   // error_reporting(0);
     include_once '../database/database_con.php';
     //echo "Connected successfully";
     $sql = 'SELECT id_user FROM accounts.applications;';
@@ -133,6 +133,7 @@
   //free result from memory
       mysqli_free_result($result);
       $id=count($users)+1;
+      echo $id;
       
     
     if (isset($_POST['name'])) {
