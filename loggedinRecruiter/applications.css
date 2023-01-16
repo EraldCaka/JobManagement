@@ -82,3 +82,9 @@ form {
 .searchbtn_1:hover {
   background-color: #45a049;
 }
+.btn1 {
+  margin-right: 10px;
+}
+th {
+  text-align: center;
+}
