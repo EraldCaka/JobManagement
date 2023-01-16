@@ -92,7 +92,7 @@
                   echo "<td class='row$count'>" . $users[$i]['phone'] . "</td>";
                   echo "<form method=`'get'`>";
                   $temp1=$users[$i]['username'];
-                  echo "<td class='row$count column1'><button name=`approve` class='searchbtn$i' value='$temp1'>Approve</button><button name=`deny$count` class='searchbtn1$i' value='$temp1'>remove</button></td>";
+                  echo "<td class='row$count column1'><button name=`approve` class='searchbtn1 btn1' value='$temp1'>Approve</button><button name=`deny$count` class='searchbtn1' value='$temp1'>remove</button></td>";
                   echo "</form>";
                   echo "</tr>";
            
