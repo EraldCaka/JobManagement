@@ -2,8 +2,8 @@ console.log("logout.js");
 document.querySelector(".logout").addEventListener("click", function () {
   console.log("logout");
   //localStorage.setItem("loggedin", false);
-  localStorage.setItem("username", "");
-  localStorage.setItem("password", "");
+  localStorage.setItem("username");
+  localStorage.setItem("password");
 
   change();
 });
