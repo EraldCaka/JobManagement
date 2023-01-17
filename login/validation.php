@@ -122,25 +122,29 @@ $_SESSION['user_id']="";
    
      if($user_name == $users[$i]['username'] && $pass_word == $users[$i]['password_emp']){
  
-     $user_id=$users[$i]['user_id'];
-       
-    
+   
+ 
       if($users[$i]['user_type'] == "admin"){
-        echo "You are logged in",$user_id;
         $_SESSION['user_id'] = $user_id;
         $_SESSION['user_type'] = $users[$i]['user_type'];
+        $user_type = $users[$i]['user_type'];
+     //   echo "<script>let user_type=$user_type</script>";
         header("Location:http://localhost:3000/JobManagement/loggedin/admin.html");
+
         exit();
       }
       if($users[$i]['user_type'] == "recruiter"){
-        echo "You are logged in",$user_id;
+
+      
         $_SESSION['user_id'] = $user_id;
         $_SESSION['user_type'] = $users[$i]['user_type'];
+        $user_type = $users[$i]['user_type'];
+       // echo "<script>let user_type= $user_type</script>";
+    
         header("Location:http://localhost:3000/JobManagement/loggedinRecruiter/recruiterHome.php");
         exit();
       }
       if($users[$i]['user_type'] == "employee"){
-        echo "You are logged in",$user_id;
         $_SESSION['user_id'] = $user_id;
         $_SESSION['user_type'] = $users[$i]['user_type'];
         header("Location:http://localhost:3000/JobManagement/loggedinEmployee/employeeHome.php");
@@ -155,6 +159,10 @@ $_SESSION['user_id']="";
     } 
 
    ?>
- <script src="validation.js"></script>
+ <script src="validation.js">
+  
+ </script>
+ 
+
   </body>
 </html>

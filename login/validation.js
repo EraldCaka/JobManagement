@@ -8,7 +8,9 @@ document.querySelector(".submit").addEventListener("click", function () {
   //localStorage.setItem("loggedin", true);
   localStorage.setItem("username", username);
   localStorage.setItem("password", password);
+  localStorage.setItem("islogged", true);
   localStorage.setItem("user_id", user_id);
+
   /* */
 
   change();

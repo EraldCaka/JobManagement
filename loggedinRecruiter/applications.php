@@ -124,7 +124,15 @@
             }
             if($start)
             {
-              $sql = "UPDATE applications set  WHERE username='$temp';";
+              $tempo=$i-1;
+              $sql = "UPDATE applications set id_user='$tempo' WHERE username='$temp';";
+              $result = mysqli_query($conn, $sql);
+              if ($result) {
+                header("Refresh:0");
+             
+              } else {
+             // echo "su bo lotig2!";
+              }
             }
          
          }
@@ -147,5 +155,7 @@
           </div>
    </form>
    <script src="application.js"></script>
+   <script src="../check_user/check.js"></script>
+   <script src="../loggedin/logout.js"></script>
 </body>
 </html>

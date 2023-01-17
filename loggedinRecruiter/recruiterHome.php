@@ -46,5 +46,7 @@
     <?php
       include '../database/database_con.php';
     ?>
+       <script src="../check_user/check.js"></script>
+       <script src="../loggedin/logout.js"></script>
 </body>
 </html>

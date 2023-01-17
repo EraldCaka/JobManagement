@@ -37,5 +37,6 @@
     <h1 class="welcome">Welcome</h1>
     <script src="logout.js"></script>
     <script src="firstProcess.js"></script>
+    <script src="../check_user/check.js"></script>
   </body>
 </html>
