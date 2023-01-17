@@ -55,7 +55,7 @@
 
           <?php
      
-            if(isset($_GET['searchbtn'])){
+          //  if(isset($_GET['searchbtn'])){
               $searchname = $_GET['searchname'];
               echo $searchname;
               echo "<table border='1'>
@@ -78,9 +78,9 @@
                   echo "<td class='row4$count'>" . $users[$i]['email'] . "</td>";
                   echo "<td class='row5$count'>" . $users[$i]['user_type'] . "</td>";
                   echo "<td class='row6$count'>" . $users[$i]['jobPosition'] . "</td>";
-                  echo "<form method=`'get'`>";
-                  echo "<td class='row7$count'><button name=`remove`>Remove</button></td>";
-                  echo "</form>";
+                 // echo "<form method=`'get'`>";
+                //  echo "<td class='row7$count'><button name=`remove`>Remove</button></td>";
+                  //echo "</form>";
                   echo "</tr>";
            
                   $count++;
@@ -89,7 +89,7 @@
              }
               echo "</table>";
               
-            }
+          //  }
     
           ?>
                     <form method="get">
@@ -104,5 +104,7 @@
           </form>
           
 <script src="mark_user.js"></script>
+<script src="../loggedin/logout.js"></script>
+<script src="../check_user/check.js"></script>
 </body>
 </html>

@@ -113,5 +113,7 @@ if(isset($_POST['update'])){
     ?>
 
     <script src="options.js"></script>
+    <script src="../loggedin/logout.js"></script>
+    <script src="../check_user/check.js"></script>
   </body>
 </html>

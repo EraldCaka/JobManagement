@@ -126,21 +126,27 @@ $_SESSION['user_id']="";
        
     
       if($users[$i]['user_type'] == "admin"){
-        echo "You are logged in",$user_id;
+      //  echo "localStorage.setItem('user_type','$user_type' );";
+     //   echo "You are logged in",$user_id;
         $_SESSION['user_id'] = $user_id;
         $_SESSION['user_type'] = $users[$i]['user_type'];
+        $user_type = $users[$i]['user_type'];
+  
         header("Location:http://localhost:3000/JobManagement/loggedin/admin.html");
+
         exit();
       }
       if($users[$i]['user_type'] == "recruiter"){
-        echo "You are logged in",$user_id;
+     //   echo "You are logged in",$user_id;
         $_SESSION['user_id'] = $user_id;
         $_SESSION['user_type'] = $users[$i]['user_type'];
+        $user_type = $users[$i]['user_type'];
+     //   echo "localStorage.setItem('user_type','$user_type' );";
         header("Location:http://localhost:3000/JobManagement/loggedinRecruiter/recruiterHome.php");
         exit();
       }
       if($users[$i]['user_type'] == "employee"){
-        echo "You are logged in",$user_id;
+  //      echo "You are logged in",$user_id;
         $_SESSION['user_id'] = $user_id;
         $_SESSION['user_type'] = $users[$i]['user_type'];
         header("Location:http://localhost:3000/JobManagement/loggedinEmployee/employeeHome.php");
@@ -156,5 +162,7 @@ $_SESSION['user_id']="";
 
    ?>
  <script src="validation.js"></script>
+ 
+
   </body>
 </html>
