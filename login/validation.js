@@ -10,7 +10,7 @@ document.querySelector(".submit").addEventListener("click", function () {
   localStorage.setItem("password", password);
   localStorage.setItem("islogged", true);
   localStorage.setItem("user_id", user_id);
-  localStorage.setItem("user_type", user_type);
+
   /* */
 
   change();
