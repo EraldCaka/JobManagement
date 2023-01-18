@@ -74,7 +74,7 @@
               //echo $searchname;
               echo "<table border='1'>
               <tr>
-              <th>userid</th>
+              
               <th>name</th>
               <th>Last Name</th>
               <th>Job Position</th>
@@ -89,7 +89,7 @@
               for($i=0;$i<count($users);$i++){
            if(str_contains($users[$i]['username'],$searchname)){
                   echo "<tr class='tr'>";
-                  echo "<td class='row$count'>" . $users[$i]['id_user'] . "</td>";
+             
                   echo "<td class='uname$count 'row$count''>" . $users[$i]['username'] . "</td>";
                   echo "<td class='row$count'>" . $users[$i]['empLastName'] . "</td>";
                   echo "<td class='row$count'>" . $users[$i]['jobPosition'] . "</td>";
