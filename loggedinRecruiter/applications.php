@@ -46,7 +46,7 @@
     <body>
 
              <?php
-             // error_reporting(0);
+              error_reporting(0);
    include_once '../database/database_con.php';
         //  echo "Connected successfully";
           $sql = 'SELECT id_user,username,empLastName,jobPosition,email,phone,email FROM accounts.applications;';
