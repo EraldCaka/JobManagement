@@ -50,17 +50,19 @@
    include_once '../database/database_con.php';
         //  echo "Connected successfully";
           $sql = 'SELECT id_user,username,empLastName,jobPosition,email,phone,email FROM accounts.applications;';
-           
+          $sql1 = 'SELECT user_id FROM accounts.users;';
           //make query & get result
             $result = mysqli_query($conn, $sql);
-
+            $result1 = mysqli_query($conn, $sql1);
             //fetch the resulting rows as an array
             $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
+            $users1 = mysqli_fetch_all($result1, MYSQLI_ASSOC);
+            $userCount=count($users1)+1;
             echo '<script>localStorage.setItem("usersLen",'.count($users).');</script>;';
         //free result from memory
             mysqli_free_result($result);
 
-    
+
              //print_r($users[0]['username']);
           ?>
 
@@ -72,6 +74,7 @@
               //echo $searchname;
               echo "<table border='1'>
               <tr>
+              <th>userid</th>
               <th>name</th>
               <th>Last Name</th>
               <th>Job Position</th>
@@ -86,6 +89,7 @@
               for($i=0;$i<count($users);$i++){
            if(str_contains($users[$i]['username'],$searchname)){
                   echo "<tr class='tr'>";
+                  echo "<td class='row$count'>" . $users[$i]['id_user'] . "</td>";
                   echo "<td class='uname$count 'row$count''>" . $users[$i]['username'] . "</td>";
                   echo "<td class='row$count'>" . $users[$i]['empLastName'] . "</td>";
                   echo "<td class='row$count'>" . $users[$i]['jobPosition'] . "</td>";
@@ -107,38 +111,81 @@
          
               echo "</table>";
           $start=false;
+          $start_approval=false;
           for($i= 1 ; $i<count($users)+1;$i++){
          
             if(isset($_GET["deny$i"])){
           
               $temp=$_GET["deny$i"];
-              echo $temp;
+            //  echo $temp;
               $sql = "DELETE FROM applications WHERE username='$temp';";
               $result = mysqli_query($conn, $sql);
               if ($result) {
-                  echo "<script>alert('Your application has been submitted successfully!')</script>";
-                } else {
-                echo "<script>alert('Your application has not been submitted successfully!')</script>";
-                }
                 $start=true;
+                continue;
+                
+                } else {
+              //  echo "<script>alert('Your application has not been submitted successfully!')</script>";
+                }
+          
             }
-            if($start)
-            {
+            if($start==true){
               $tempo=$i-1;
-              $sql = "UPDATE applications set id_user='$tempo' WHERE username='$temp';";
-              $result = mysqli_query($conn, $sql);
-              if ($result) {
-                header("Refresh:0");
+              $tempUsername=$users[$tempo]['username'];
+            
+                  $sql = "UPDATE applications set id_user='$tempo' WHERE username='$tempUsername';";
+                  $result = mysqli_query($conn, $sql);
+                  if ($result) {
+                    //echo "<script>alert('Your application has been submitted lotig2 successfully!')</script>";
+                 
+                  } else {
+                    //echo "<script>alert('Your application hasnt been submitted lotig2 successfully!')</script>";
+                  }
+                }
+
+            if(isset($_GET["approve$i"])){
+          
+              $temp=$_GET["approve$i"];
+             // echo $temp;
+             //sql join two tables and insert into users table from the applications table and also to insert user_id with php
+$userLN=$users[$i-1]['empLastName'];
+echo $userLN;
+$userJP=$users[$i-1]['jobPosition'];
+$userEmail=$users[$i-1]['email'];
+$userPhone=$users[$i-1]['phone'];
+
+              $sql = "  INSERT INTO `accounts`.`users` (`username`,`empLastName`,`jobPosition`,`email`,`phone`,`user_id`,`user_type`,`password_emp`) 
+             VALUE ('$temp','$userLN','$userJP','$userEmail','$userPhone','$userCount','employee','1234');
              
-              } else {
-             // echo "su bo lotig2!";
-              }
-            }
-         
-         }
-               
+    ";
+
+
               
-          //  }
+            $result = mysqli_query($conn, $sql);
+              if ($result) {
+                echo "<script>alert('Your application has not been submitted successfully!')</script>";
+                $sql = "DELETE FROM applications WHERE username='$temp';";
+                $result = mysqli_query($conn, $sql);
+                if ($result) {
+                  //echo "<script>alert('Your application has been submitted lotig2 successfully!')</script>";
+                  $start=true;
+                } else {
+                  //echo "<script>alert('Your application hasnt been submitted lotig2 successfully!')</script>";
+                }
+            
+                } else {
+              
+                }
+         }
+         
+         
+        }
+         if($start==true){
+          $start=false;
+          header("Location: applications.php");
+          
+         }
+
     
           ?>
           <script>
