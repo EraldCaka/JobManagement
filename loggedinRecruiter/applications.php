@@ -112,11 +112,11 @@
             if(isset($_GET["deny$i"])){
           
               $temp=$_GET["deny$i"];
-              echo $temp;
+            //  echo $temp;
               $sql = "DELETE FROM applications WHERE username='$temp';";
               $result = mysqli_query($conn, $sql);
               if ($result) {
-                  echo "<script>alert('Your application has been submitted successfully!')</script>";
+                 
                 } else {
                 echo "<script>alert('Your application has not been submitted successfully!')</script>";
                 }
@@ -128,7 +128,7 @@
               $sql = "UPDATE applications set id_user='$tempo' WHERE username='$temp';";
               $result = mysqli_query($conn, $sql);
               if ($result) {
-                header("Refresh:0");
+               
              
               } else {
              // echo "su bo lotig2!";
@@ -136,6 +136,11 @@
             }
          
          }
+         if($start==true){
+    header("Location:http://localhost:3000/JobManagement/loggedinRecruiter/applications.php");
+          $start=false;
+         }
+         
                
               
           //  }

@@ -122,7 +122,8 @@ $_SESSION['user_id']="";
    
      if($user_name == $users[$i]['username'] && $pass_word == $users[$i]['password_emp']){
  
-   
+      $user_id=$users[$i]['user_id'];
+      echo "<script>localStorage.setItem('user_id', '$user_id');</script>";
  
       if($users[$i]['user_type'] == "admin"){
         $_SESSION['user_id'] = $user_id;
