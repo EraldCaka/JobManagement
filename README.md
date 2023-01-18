@@ -24,6 +24,11 @@ This is a basic web application with 3 different type of users (guest, recruiter
 <li>Can apply for the job they want
 <li>Can contact the company
 
+## TO-DO
+
+<li> css - styling 
+<li> admin can fire people( removal from the users database )
+
 ## Recruitment applications database!
 
 ![image](https://user-images.githubusercontent.com/96385473/212551915-9d5a1dd0-fda1-4fa1-9e99-c0c9e8ed6194.png)
