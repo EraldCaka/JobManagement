@@ -111,6 +111,7 @@
          
               echo "</table>";
           $start=false;
+          $start_approval=false;
           for($i= 1 ; $i<count($users)+1;$i++){
          
             if(isset($_GET["deny$i"])){
@@ -162,11 +163,22 @@ $userPhone=$users[$i-1]['phone'];
               
             $result = mysqli_query($conn, $sql);
               if ($result) {
-                 
-                } else {
                 echo "<script>alert('Your application has not been submitted successfully!')</script>";
+                $sql = "DELETE FROM applications WHERE username='$temp';";
+                $result = mysqli_query($conn, $sql);
+                if ($result) {
+                  //echo "<script>alert('Your application has been submitted lotig2 successfully!')</script>";
+                  $start=true;
+                } else {
+                  //echo "<script>alert('Your application hasnt been submitted lotig2 successfully!')</script>";
+                }
+            
+                } else {
+              
                 }
          }
+         
+         
         }
          if($start==true){
           $start=false;
