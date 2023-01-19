@@ -147,7 +147,7 @@
           
               $temp=$_GET["approve$i"];
              // echo $temp;
-             //sql join two tables and insert into users table from the applications table and also to insert user_id with php
+  
 $userLN=$users[$i-1]['empLastName'];
 echo $userLN;
 $userJP=$users[$i-1]['jobPosition'];
