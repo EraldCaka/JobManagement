@@ -39,4 +39,4 @@ This is a basic web application with 3 different type of users (guest, recruiter
 
 ---
 
-<strong>Contributors :[Hideki Natsumi](https://github.com/HidekiNatsumi) and [Kris Beka](https://github.com/KRIS13-GIF)</strong>
+<strong>Contributors :[Erald Caka](https://github.com/EraldCaka) and [Kris Beka](https://github.com/KRIS13-GIF)</strong>
