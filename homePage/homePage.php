@@ -28,8 +28,15 @@
         </ul>
       </nav>
     </header>
-    <h1 class="">Welcome</h1>
-   
+    <h1 class="welcome" >Thank You</h1>
+    <style>
+    .welcome{
+      color: white;
+      /*center this text on the page*/
+    
+      
+    }
+    </style>
 
     <footer>
       <div class="foot">
