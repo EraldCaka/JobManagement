@@ -7,6 +7,7 @@
     <title>JobManager</title>
     <link rel="stylesheet" href="homePage.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="hp-background.css" />
     <link rel="icon" type="image/png" href="../images/icon.png" />
   </head>
   <body>
