@@ -18,7 +18,7 @@
           <li>|</li>
           <li class="first options">
             <a
-              href="http://localhost:3000/JobManagement/loggedinRecruiter/recruiterHome.php"
+              href="http://localhost:3000/JobManagement/loggedinEmployee/employeeHome.php"
               class=""
               >Home</a
             >
@@ -31,7 +31,7 @@
           </li>
           <li></li>
           <li class="first">
-            <a href="http://localhost:3000/JobManagement/loggedinRecruiter/recruiterHome.php"></a>
+            <a href=""></a>
           </li>
           <li></li>
           <li class="first"><a href="../career/career.html"></a></li>
