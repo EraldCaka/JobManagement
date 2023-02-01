@@ -31,9 +31,12 @@
     <h1 class="welcome" >Thank You</h1>
     <style>
     .welcome{
-      color: white;
-      /*center this text on the page*/
-    
+     
+  text-align: center;
+  font-size: 130px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
       
     }
     </style>
